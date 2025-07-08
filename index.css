@@ -14,39 +14,31 @@ body {
 }
 
 /*parte do cabeçalho*/
-/* Cabeçalho fixo no topo */
 #cabecalho {
-    background-color: #1A1A40;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    width: 100%;
+  background-color: #1A1A40;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  padding: 20px 0;
 }
 
-/* Layout interno do cabeçalho */
 .container-topo {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 15px 30px;
-    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 30px;
 }
 
-/* Logo */
-.logo img {
-    height: 60px;
-}
-
-/* Nome do site na esquerd */
 #nome-site {
-    position: absolute;
-    left: 14%;
-    transform: translateX(-50%);
-    font-size: 1.8em;
-    color: #ffffff;
-    margin: 0;
+  font-size: 2em;
+  color: #ffffff;
+  margin: 0 20px;
 }
+
 
 /* Navegação */
 #navegacao ul {
