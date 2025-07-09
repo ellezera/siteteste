@@ -1,0 +1,362 @@
+
+body {
+    background-color: #F7F4EA;
+    color: #1A1A40;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Adiciona espaço no topo para não ficar atrás do cabeçalho fixo */
+    padding-top: 80px; 
+}
+
+/* Container principal para centralizar e limitar a largura do conteúdo */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo geral para os títulos principais de cada seção */
+section > h2 {
+    text-align: center;
+    color: #1A1A40;
+    font-size: 2.5em;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: 'Arial Black', Arial, sans-serif;
+}
+
+/* =================================================================== */
+/* 2. CABEÇALHO (Exatamente como você pediu)
+/* =================================================================== */
+
+#cabecalho {
+    background-color: #1A1A40;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 100%;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    min-height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.container-topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+.logo img {
+    height: 60px;
+    display: block; /* Evita espaços indesejados abaixo da imagem */
+}
+
+#nome-site {
+    position: absolute;
+    left: 13%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* Centraliza perfeitamente */
+    font-size: 1.8em;
+    color: #ffffff;
+    margin: 0;
+    white-space: nowrap; /* Impede quebra de linha */
+}
+
+#navegacao ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navegacao a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#navegacao a:hover {
+    color: #FF5733; /* Cor do hover do seu exemplo */
+}
+
+
+/* =================================================================== */
+/* 3. SEÇÃO DE ATRAÇÕES
+/* =================================================================== */
+
+.atracao-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+    overflow: hidden;
+}
+
+.atracao-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.atracao-card h2 {
+    text-align: left;
+    margin-top: 0;
+    font-size: 1.8em;
+}
+
+/* Grid para as informações (localização, altura, etc.) */
+.informacoes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    padding: 20px 0;
+    margin: 20px 0;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.info-item h3 {
+    margin: 0 0 5px 0;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.info-item p {
+    margin: 0;
+    font-size: 0.95em;
+}
+
+/* Descrição da atração */
+.descricao-atracao h3 {
+    color: #CBA135;
+    font-size: 1.3em;
+    font-family: 'Arial Black', Arial, sans-serif;
+}
+
+.descricao-atracao p {
+    line-height: 1.6;
+}
+
+/* =================================================================== */
+/* 4. SEÇÃO DE INGRESSOS E CARDS
+/* =================================================================== */
+
+#ingressos h3 {
+    text-align: center;
+    font-size: 1.8em;
+    margin: 40px 0 20px 0;
+}
+
+#ingressos > p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    line-height: 1.6;
+}
+
+/* Grid para os cards de ingressos */
+.ingressos-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Estilo do Card (usando a base que você forneceu) */
+.card {
+    background-color: white;
+    border: 2px solid #CBA135;
+    border-radius: 25px; /* Um pouco menos exagerado que 40px */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column; /* Importante para o alinhamento do botão */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(26, 26, 64, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.card h4 {
+    font-size: 1.3em;
+    margin: 0 0 15px 0;
+    font-family: 'Arial Black', Arial, sans-serif;
+}
+
+.card p {
+    margin: 6px 0;
+    flex-grow: 1; /* Faz todos os parágrafos ocuparem o mesmo espaço, alinhando os botões */
+}
+
+.card .price {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 15px 0;
+    flex-grow: 0; /* O preço não deve esticar */
+}
+
+.card .btn-oferta {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 25px; /* Botão um pouco maior */
+    background-color: #CBA135;
+    color: #F7F4EA;
+    text-decoration: none;
+    border-radius: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.card .btn-oferta:hover {
+    background-color: #A07825;
+}
+
+/* =================================================================== */
+/* 5. SEÇÃO DE BENEFÍCIOS (Com imagem redonda)
+/* =================================================================== */
+
+.beneficios-card {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 60px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+/* Classe para inverter a ordem (imagem na direita) */
+.beneficios-card.reverse {
+    flex-direction: row-reverse;
+}
+
+.beneficios-card img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%; /* A imagem fica redonda */
+    flex-shrink: 0; /* Impede que a imagem encolha */
+}
+
+.beneficios-card h3 {
+    margin-top: 0;
+}
+
+.beneficios-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.beneficios-card li {
+    padding: 8px 0;
+}
+
+/* =================================================================== */
+/* . RODAPÉ 
+/* =================================================================== */
+
+footer { /* Aplica os estilos diretamente na tag footer */
+    background-color: #1A1A40;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+footer h2 {
+    color: #fff;
+}
+
+.lista-redes-socias {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.lista-redes-socias li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.lista-redes-socias a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s ease;
+}
+
+.lista-redes-socias a:hover {
+    color: #FF5733;
+}
+
+.lista-redes-socias img {
+    width: 20px;
+    height: 20px;
+}
+
+footer p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* =================================================================== */
+/* 7. AJUSTES PARA TELAS MENORES (Responsividade)
+/* =================================================================== */
+
+@media (max-width: 1024px) {
+    /* Em telas menores, o nome do site posicionado pode quebrar o layout */
+    #nome-site {
+        position: static;
+        transform: none;
+        text-align: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .container-topo {
+        flex-direction: column;
+        gap: 15px;
+    }
+    body {
+        padding-top: 150px; /* Aumenta o espaço para o cabeçalho maior */
+    }
+}
+
+@media (max-width: 768px) {
+    .beneficios-card {
+        flex-direction: column; /* Empilha a imagem e o texto */
+        text-align: center;
+    }
+    .beneficios-card.reverse {
+        flex-direction: column; /* Garante que ambos empilhem da mesma forma */
+    }
+}
