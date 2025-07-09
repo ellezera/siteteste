@@ -33,13 +33,6 @@ html, body {
   flex-wrap: wrap;
 }
 
-/* Logo + nome juntos */
-.logo-nome {
-  display: flex;
-  align-items: center;
-  gap: 5px; /* espaço pequeno entre logo e nome */
-}
-
 .logo-nome a img {
   height: 60px;
 }
