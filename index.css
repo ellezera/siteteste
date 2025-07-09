@@ -1,0 +1,181 @@
+/* Define o fundo, cor do texto, fonte e remove margens da página */
+body {
+    background-color: #F7F4EA;
+    color: #1A1A40;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho fixo no topo */
+#cabecalho {
+    background-color: #1A1A40;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* Container interno do cabeçalho com flex */
+#cabecalho header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Logo+nome à esquerda, nav à direita */
+}
+
+/* Agrupa logo + nome numa div para alinhar juntos à esquerda */
+#cabecalho .logo-nome {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Logo */
+#cabecalho .logo-nome a img {
+    height: 60px;
+}
+
+/* Nome do site */
+#nome-site {
+    font-size: 1.8em;
+    color: #fff;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Navegação */
+#navegacao ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navegacao li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: color 0.3s ease;
+}
+
+#navegacao li a:hover {
+    color: #FF5733;
+}
+
+/* Espaço para o conteúdo abaixo do cabeçalho fixo */
+#main {
+    padding-top: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* Títulos principais */
+h2 {
+    text-align: center;
+    color: #1A1A40;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* Parágrafos */
+#quem-somos p,
+#nossa-missao p,
+#visao p,
+#motivos-escolha p {
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+    line-height: 1.5;
+    font-size: 1.1rem;
+    color: #1A1A40;
+}
+
+/* Blocos dentro do motivos-escolha */
+#motivos-escolha > div {
+    background: white;
+    border: 2px solid #CBA135;
+    border-radius: 25px;
+    padding: 20px 25px;
+    margin: 20px auto;
+    max-width: 900px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#motivos-escolha > div:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(26, 26, 64, 0.2);
+}
+
+/* Títulos h3 dentro dos motivos */
+#motivos-escolha h3 {
+    font-family: 'Arial Black', Arial, sans-serif;
+    color: #1A1A40;
+    margin-bottom: 10px;
+}
+
+/* Rodapé */
+#rodape {
+    background-color: #1A1A40;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 60px;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+/* Conteúdo do rodapé centralizado */
+#rodape footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Lista de redes sociais */
+.lista-redes-socias {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.lista-redes-socias li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.lista-redes-socias a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s ease;
+}
+
+.lista-redes-socias a:hover {
+    color: #FF5733;
+}
+
+.lista-redes-socias img {
+    width: 20px;
+    height: 20px;
+}
+
