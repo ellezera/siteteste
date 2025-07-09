@@ -42,7 +42,7 @@ html, body {
 /* Nome do site na esquerd */
 #nome-site {
     position: absolute;
-    left: 14%;
+    left: 13%;
     transform: translateX(-50%);
     font-size: 1.8em;
     color: #ffffff;
@@ -68,6 +68,7 @@ html, body {
 #navegacao a:hover {
     color: #FF5733;
 }
+
 
 /* Títulos principais */
 h2 {
