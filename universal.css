@@ -1,351 +1,361 @@
-/* ================================================== */
-/* 1. ESTILO GLOBAL */
-/* ================================================== */
+/* =============================================== */
+/* ESTILO GERAL DO SITE                            */
+/* =============================================== */
 
 body {
   margin: 0;
   padding: 0;
-  padding-top: 0px;  /* esse valor deve compensar a altura do cabeçalho */
+  padding-top: 0px;  
   background-color: #F7F4EA;
   font-family: Arial, sans-serif;
 }
 
-
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 section > h2 {
-    text-align: center;
-    color: #1A1A40;
-    font-size: 2.5em;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    font-family: 'Arial Black', Arial, sans-serif;
+  text-align: center;
+  color: #1A1A40;
+  font-size: 2.5em;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-family: 'Arial Black', Arial, sans-serif;
 }
 
-/* ================================================== */
-/* 2. CABEÇALHO */
-/* ================================================== */
-#cabecalho {
-    position: static;     /* <-- ADICIONE PARA FIXAR NA TELA */
-    top: 0;              /* <-- Garante que ele cole no topo */
-    left: 0;             /* <-- Garante que ele comece na esquerda */
-    width: 100%;         /* <-- Faz ocupar toda a largura da tela */
 
-    background-color: #1A1A40;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1000;       /* Mantém o cabeçalho acima de outros elementos */
-    padding: 15px 30px;
-    box-sizing: border-box;
-    min-height: 80px;
+/* =============================================== */
+/* CABEÇALHO                                        */
+/* =============================================== */
+
+#cabecalho {
+  position: static;    
+  top: 0;              
+  left: 0;
+  width: 100%;
+  background-color: #1A1A40;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 15px 30px;
+  box-sizing: border-box;
+  min-height: 80px;
 }
 
 .container-topo {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1600px; /* largura máxima do conteúdo interno */
-    margin: 0 auto;     /* centraliza o conteúdo na tela */
-    padding: 0 20px;    /* espaçamento interno lateral */
-    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
 }
 
-/* Logo */
 .logo img {
-    height: 60px;
+  height: 60px;
 }
 
-/* Nome do site na esquerd */
+/* Nome centralizado horizontalmente (ajustar se necessário) */
 #nome-site {
-    position: absolute;
-    left: 13%;
-    transform: translateX(-50%);
-    font-size: 1.8em;
-    color: #ffffff;
-    margin: 0;
+  position: absolute;
+  left: 13%;
+  transform: translateX(-50%);
+  font-size: 1.8em;
+  color: #ffffff;
+  margin: 0;
 }
 
-/* Navegação */
+/* Navegação principal */
 #navegacao ul {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 #navegacao a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
-    transition: color 0.3s;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
 #navegacao a:hover {
-    color: #FF5733;
+  color: #FF5733;
 }
 
-/* ================================================== */
-/* 3. SEÇÃO DE ATRAÇÕES */
-/* ================================================== */
+
+/* =============================================== */
+/* SEÇÃO DAS ATRAÇÕES                              */
+/* =============================================== */
+
 .atracao-card {
-    background-color: #ffffff;
-    border-radius: 15px;
-    padding: 30px;
-    margin-bottom: 40px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
-    overflow: hidden;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
 }
 
 .atracao-card img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 20px;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .atracao-card h2 {
-    text-align: left;
-    margin-top: 0;
-    font-size: 1.8em;
+  text-align: left;
+  margin-top: 0;
+  font-size: 1.8em;
 }
 
 .informacoes-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 25px;
-    padding: 20px 0;
-    margin: 20px 0;
-    border-top: 1px solid #eeeeee;
-    border-bottom: 1px solid #eeeeee;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 20px 0;
+  margin: 20px 0;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .info-item h3 {
-    margin: 0 0 5px 0;
-    font-size: 1em;
-    font-weight: bold;
+  margin: 0 0 5px 0;
+  font-size: 1em;
+  font-weight: bold;
 }
 
 .info-item p {
-    margin: 0;
-    font-size: 0.95em;
+  margin: 0;
+  font-size: 0.95em;
 }
 
 .descricao-atracao h3 {
-    color: #CBA135;
-    font-size: 1.3em;
-    font-family: 'Arial Black', Arial, sans-serif;
+  color: #CBA135;
+  font-size: 1.3em;
+  font-family: 'Arial Black', Arial, sans-serif;
 }
 
 .descricao-atracao p {
-    line-height: 1.6;
+  line-height: 1.6;
 }
 
-/* ================================================== */
-/* 4. SEÇÃO DE INGRESSOS */
-/* ================================================== */
+
+/* =============================================== */
+/* INGRESSOS E PACOTES                             */
+/* =============================================== */
+
 #ingressos h3 {
-    text-align: center;
-    font-size: 1.8em;
-    margin: 40px 0 20px 0;
+  text-align: center;
+  font-size: 1.8em;
+  margin: 40px 0 20px 0;
 }
 
 #ingressos > p {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto 40px auto;
-    line-height: 1.6;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
 }
 
 .ingressos-cards-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
 }
 
 .card {
-    background-color: white;
-    border: 2px solid #CBA135;
-    border-radius: 25px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-    display: flex;
-    flex-direction: column;
+  background-color: white;
+  border: 2px solid #CBA135;
+  border-radius: 25px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
 }
 
 .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(26, 26, 64, 0.2);
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(26, 26, 64, 0.2);
 }
 
 .card img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 15px;
-    margin-bottom: 15px;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 15px;
 }
 
 .card h4 {
-    font-size: 1.3em;
-    margin: 0 0 15px 0;
-    font-family: 'Arial Black', Arial, sans-serif;
+  font-size: 1.3em;
+  margin: 0 0 15px 0;
+  font-family: 'Arial Black', Arial, sans-serif;
 }
 
 .card p {
-    margin: 6px 0;
-    flex-grow: 1;
+  margin: 6px 0;
+  flex-grow: 1;
 }
 
 .card .price {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin: 15px 0;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 15px 0;
 }
 
 .card .btn-oferta {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 12px 25px;
-    background-color: #CBA135;
-    color: #F7F4EA;
-    text-decoration: none;
-    border-radius: 15px;
-    font-weight: bold;
-    transition: 0.3s;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 25px;
+  background-color: #CBA135;
+  color: #F7F4EA;
+  text-decoration: none;
+  border-radius: 15px;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
 .card .btn-oferta:hover {
-    background-color: #A07825;
+  background-color: #A07825;
 }
 
-/* ================================================== */
-/* 5. SEÇÃO DE BENEFÍCIOS */
-/* ================================================== */
+
+/* =============================================== */
+/* SEÇÃO DE BENEFÍCIOS                             */
+/* Cartões com imagem e lista de vantagens         */
+/* =============================================== */
+
 .beneficios-card {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    margin-top: 60px;
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 60px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
 }
 
 .beneficios-card.reverse {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 .beneficios-card img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 50%;
-    flex-shrink: 0;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
 }
 
 .beneficios-card h3 {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .beneficios-card ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .beneficios-card li {
-    padding: 8px 0;
+  padding: 8px 0;
 }
 
-/* ================================================== */
-/* 6. RODAPÉ */
-/* ================================================== */
+
+/* =============================================== */
+/* RODAPÉ                                          */
+/* =============================================== */
+
 footer {
-    background-color: #1A1A40;
-    color: #fff;
-    padding: 30px 20px;
-    text-align: center;
-    font-family: Arial, sans-serif;
+  background-color: #1A1A40;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
 }
 
 footer h2 {
-    color: #fff;
+  color: #fff;
 }
 
 .lista-redes-socias {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto 20px;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .lista-redes-socias li {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .lista-redes-socias a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    transition: color 0.3s ease;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease;
 }
 
 .lista-redes-socias a:hover {
-    color: #FF5733;
+  color: #FF5733;
 }
 
 .lista-redes-socias img {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 footer p {
-    font-size: 14px;
-    opacity: 0.8;
+  font-size: 14px;
+  opacity: 0.8;
 }
 
-/* ================================================== */
-/* 7. RESPONSIVIDADE */
-/* ================================================== */
+
+/* =============================================== */
+/* AJUSTES RESPONSIVOS                             */
+/* =============================================== */
+
 @media (max-width: 1024px) {
-    #nome-site {
-        position: static;
-        transform: none;
-        text-align: center;
-        width: 100%;
-        margin-top: 10px;
-    }
+  #nome-site {
+    position: static;
+    transform: none;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+  }
 
-    .container-topo {
-        flex-direction: column;
-        gap: 15px;
-    }
+  .container-topo {
+    flex-direction: column;
+    gap: 15px;
+  }
 
-    body {
-        padding-top: 130px; /* Ajuste para cabeçalho empilhado */
-    }
+  body {
+    padding-top: 130px; /* espaço extra pra não cobrir o conteúdo */
+  }
 }
 
 @media (max-width: 768px) {
-    .beneficios-card {
-        flex-direction: column;
-        text-align: center;
-    }
+  .beneficios-card {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .beneficios-card.reverse {
-        flex-direction: column;
-    }
+  .beneficios-card.reverse {
+    flex-direction: column;
+  }
 }
