@@ -100,37 +100,42 @@ section.pacotes + section.pacotes {
 #cabecalho {
     background-color: #1A1A40;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
     width: 100%;
+    min-height: 80px;
+    box-sizing: border-box;
 }
 
-/* Layout interno do cabeçalho */
+/* Container do cabeçalho */
 .container-topo {
     display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 15px 30px;
+    padding: 0 30px;
     position: relative;
 }
 
 /* Logo */
 .logo img {
-    height: 60px;
+    height: 50px;
 }
 
-/* Nome do site na esquerd */
+/* Nome do site ao lado esquerdo da logo */
 #nome-site {
-    position: absolute;
-    left: 14%;
-    transform: translateX(-50%);
     font-size: 1.8em;
     color: #ffffff;
-    margin: 0;
+    margin-left: 10px;
+    font-weight: bold;
 }
 
-/* Navegação */
+/* Agrupamento da logo e nome */
+.logo-nome {
+    display: flex;
+    align-items: center;
+}
+
+/* Navegação alinhada à direita */
 #navegacao ul {
     display: flex;
     gap: 20px;
