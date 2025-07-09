@@ -37,6 +37,13 @@ html, body {
   height: 60px;
 }
 
+/* Logo + nome juntos */
+.logo-nome {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* espaço pequeno entre logo e nome */
+}
+
 /* Nome do site na esquerd */
 #nome-site {
     position: absolute;
