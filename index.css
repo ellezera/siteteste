@@ -1,10 +1,16 @@
-/* Define o fundo, cor do texto, fonte e remove margens da página */
-body {
-    background-color: #F7F4EA;
-    color: #1A1A40;
-    font-family: Arial, sans-serif;
+/* Reset e base */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F7F4EA;
+    color: #1A1A40;
 }
 
 /* Cabeçalho fixo no topo */
@@ -18,17 +24,18 @@ body {
     left: 0;
 }
 
-/* Container interno do cabeçalho com flex */
+/* Container interno do cabeçalho */
 #cabecalho header {
     max-width: 1200px;
     margin: 0 auto;
     padding: 15px 30px;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Logo+nome à esquerda, nav à direita */
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-/* Agrupa logo + nome numa div para alinhar juntos à esquerda */
+/* Agrupamento de logo e nome */
 #cabecalho .logo-nome {
     display: flex;
     align-items: center;
@@ -55,6 +62,7 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap;
 }
 
 #navegacao li a {
@@ -69,7 +77,7 @@ body {
     color: #FF5733;
 }
 
-/* Espaço para o conteúdo abaixo do cabeçalho fixo */
+/* Conteúdo principal */
 #main {
     padding-top: 100px;
     max-width: 1200px;
@@ -86,7 +94,7 @@ h2 {
     margin-bottom: 15px;
 }
 
-/* Parágrafos */
+/* Parágrafos de seções */
 #quem-somos p,
 #nossa-missao p,
 #visao p,
@@ -98,7 +106,7 @@ h2 {
     color: #1A1A40;
 }
 
-/* Blocos dentro do motivos-escolha */
+/* Blocos do "motivos-escolha" */
 #motivos-escolha > div {
     background: white;
     border: 2px solid #CBA135;
@@ -115,7 +123,7 @@ h2 {
     box-shadow: 0 8px 20px rgba(26, 26, 64, 0.2);
 }
 
-/* Títulos h3 dentro dos motivos */
+/* Títulos h3 */
 #motivos-escolha h3 {
     font-family: 'Arial Black', Arial, sans-serif;
     color: #1A1A40;
@@ -131,10 +139,9 @@ h2 {
     font-family: Arial, sans-serif;
     margin-top: 60px;
     width: 100%;
-    box-sizing: border-box;
 }
 
-/* Conteúdo do rodapé centralizado */
+/* Conteúdo do rodapé */
 #rodape footer {
     max-width: 1200px;
     margin: 0 auto;
@@ -178,4 +185,3 @@ h2 {
     width: 20px;
     height: 20px;
 }
-
