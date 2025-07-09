@@ -325,37 +325,3 @@ footer p {
   opacity: 0.8;
 }
 
-
-/* =============================================== */
-/* AJUSTES RESPONSIVOS                             */
-/* =============================================== */
-
-@media (max-width: 1024px) {
-  #nome-site {
-    position: static;
-    transform: none;
-    text-align: center;
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  .container-topo {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  body {
-    padding-top: 130px; /* espaço extra pra não cobrir o conteúdo */
-  }
-}
-
-@media (max-width: 768px) {
-  .beneficios-card {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .beneficios-card.reverse {
-    flex-direction: column;
-  }
-}
